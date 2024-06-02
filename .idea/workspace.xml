@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="create project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/TestBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="create first bean">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/ClassicalMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/MusicPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/RockMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,20 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "a7d916346f64563273379103fb2c2f79"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a7d916346f64563273379103fb2c2f79&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clear" />
@@ -87,7 +89,9 @@
       <option name="presentableId" value="Default" />
       <updated>1716906349656</updated>
       <workItem from="1716906351126" duration="1843000" />
-      <workItem from="1716993104020" duration="938000" />
+      <workItem from="1716993104020" duration="1573000" />
+      <workItem from="1717143469104" duration="351000" />
+      <workItem from="1717325273116" duration="1002000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -96,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716907789289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create first bean">
+      <created>1716994082047</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716994082047</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project" />
+    <MESSAGE value="create first bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="create first bean" />
   </component>
 </project>
