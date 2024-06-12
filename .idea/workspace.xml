@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="lesson 5 part 1">
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="lesson 6">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testBean.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/MusicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/TestBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/TestBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +93,7 @@
       <workItem from="1717143469104" duration="351000" />
       <workItem from="1717325273116" duration="1858000" />
       <workItem from="1717754756948" duration="26000" />
-      <workItem from="1718227185503" duration="727000" />
+      <workItem from="1718227185503" duration="2028000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -112,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717329233217</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lesson 6">
+      <created>1718229394862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718229394862</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +144,7 @@
     <MESSAGE value="create project" />
     <MESSAGE value="create first bean" />
     <MESSAGE value="lesson 5 part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 5 part 1" />
+    <MESSAGE value="lesson 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 6" />
   </component>
 </project>
