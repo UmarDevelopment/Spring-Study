@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="create first bean">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/ClassicalMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/RockMusic.java" afterDir="false" />
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="lesson 5 part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
@@ -91,7 +87,9 @@
       <workItem from="1716906351126" duration="1843000" />
       <workItem from="1716993104020" duration="1573000" />
       <workItem from="1717143469104" duration="351000" />
-      <workItem from="1717325273116" duration="1002000" />
+      <workItem from="1717325273116" duration="1858000" />
+      <workItem from="1717754756948" duration="26000" />
+      <workItem from="1718227185503" duration="727000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -107,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716994082047</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lesson 5 part 1">
+      <created>1717329233217</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717329233217</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +132,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
     <MESSAGE value="create first bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="create first bean" />
+    <MESSAGE value="lesson 5 part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 5 part 1" />
   </component>
 </project>

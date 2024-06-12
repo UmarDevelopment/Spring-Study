@@ -10,5 +10,10 @@
     <bean id="musicBean"
           class="me.umar.RockMusic">
     </bean>
+    <bean
+        id = "musicPlayer"
+        class = "me.umar.MusicPlayer">
+        <constructor-arg ref="musicBean"></constructor-arg>
+    </bean>
 
 </beans>
