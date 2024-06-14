@@ -11,10 +11,15 @@ public class TestBean {
         System.out.println("Some destroy");
     }
 
-    public TestBean(String name) {
+    private TestBean(String name) {
         this.name = name;
     }
-    public TestBean(){}
+    private TestBean(){}
+
+    public static TestBean getTestBean(){
+        System.out.println("inside fabric");
+        return new TestBean();
+    }
 
     public String getName() {
         return name;

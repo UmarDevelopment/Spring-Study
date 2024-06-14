@@ -21,7 +21,8 @@
             class="me.umar.TestBean"
             scope="singleton"
             init-method="init"
-            destroy-method="destroy">
+            destroy-method="destroy"
+            factory-method="getTestBean">
         <property name="name" value="${testBean.name}"/>
         <property name="someint" value="${testBean.someint}"/>
     </bean>
