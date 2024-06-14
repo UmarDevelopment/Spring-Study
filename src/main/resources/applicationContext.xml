@@ -18,7 +18,8 @@
     </bean>
     <bean
             id="testBean"
-            class="me.umar.TestBean">
+            class="me.umar.TestBean"
+            scope="prototype">
         <property name="name" value="${testBean.name}"/>
         <property name="someint" value="${testBean.someint}"/>
     </bean>
