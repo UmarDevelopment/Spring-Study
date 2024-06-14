@@ -4,6 +4,13 @@ public class TestBean {
     String name;
     int someint = 0;
 
+    public void init(){
+        System.out.println("Some init");
+    }
+    public void destroy(){
+        System.out.println("Some destroy");
+    }
+
     public TestBean(String name) {
         this.name = name;
     }

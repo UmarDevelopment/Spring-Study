@@ -11,5 +11,6 @@ public class Main {
         TestBean testBean2 = context.getBean("testBean", TestBean.class);
         System.out.println(testBean1==testBean2);
         System.out.println(mp1==mp2);
+        context.close();
     }
 }
