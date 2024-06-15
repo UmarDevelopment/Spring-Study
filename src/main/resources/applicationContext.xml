@@ -8,6 +8,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:property-placeholder location="classpath:testBean.properties"/>
+    <context:component-scan base-package="me.umar"/>
     <bean id="musicBean"
           class="me.umar.ClassicalMusic">
     </bean>
@@ -19,7 +20,7 @@
     <bean
             id="testBean"
             class="me.umar.TestBean"
-            scope="singleton"
+            scope="prototype"
             init-method="init"
             destroy-method="destroy"
             factory-method="getTestBean">
