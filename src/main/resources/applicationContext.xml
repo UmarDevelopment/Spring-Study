@@ -6,26 +6,6 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-
-    <context:property-placeholder location="classpath:testBean.properties"/>
     <context:component-scan base-package="me.umar"/>
-    <bean id="musicBean"
-          class="me.umar.ClassicalMusic">
-    </bean>
-    <bean
-            id="musicPlayer"
-            class="me.umar.MusicPlayer">
-        <property name="music" ref="musicBean"/>
-    </bean>
-    <bean
-            id="testBean"
-            class="me.umar.TestBean"
-            scope="prototype"
-            init-method="init"
-            destroy-method="destroy"
-            factory-method="getTestBean">
-        <property name="name" value="${testBean.name}"/>
-        <property name="someint" value="${testBean.someint}"/>
-    </bean>
 
 </beans>
