@@ -11,14 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="change XML config to java code config">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/FirstController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/bye.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/hello.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello_world.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/FirstController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/FirstController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +96,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.891" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.891" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="testspring:war exploded">
@@ -371,6 +366,8 @@
       <workItem from="1718728693375" duration="1837000" />
       <workItem from="1718732410879" duration="2140000" />
       <workItem from="1718785076448" duration="323000" />
+      <workItem from="1718890703640" duration="62000" />
+      <workItem from="1718976345391" duration="511000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -484,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718733959696</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="change XML config to java code config">
+      <created>1718890755771</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1718890755771</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,6 +522,7 @@
     <MESSAGE value="lesson 14 homework" />
     <MESSAGE value="lesson 16 SPRING MVC" />
     <MESSAGE value="create SPRING_MVC branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="create SPRING_MVC branch" />
+    <MESSAGE value="change XML config to java code config" />
+    <option name="LAST_COMMIT_MESSAGE" value="change XML config to java code config" />
   </component>
 </project>
