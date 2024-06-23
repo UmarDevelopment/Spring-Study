@@ -1,6 +1,7 @@
 package me.umar.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -10,10 +11,11 @@ import javax.servlet.http.HttpServletRequest;
 public class FirstController {
 
     @GetMapping("/hello")
-    public String sayHello(HttpServletRequest request){
+    public String sayHello(HttpServletRequest request, Model model){
         String name = request.getParameter("name");
         String surname = request.getParameter("surname");
-        System.out.println(name+" : "+surname);
+        String message = name+" : "+surname;
+        model.addAttribute("message", message);
         return "first/hello";
     }
 
