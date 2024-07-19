@@ -9,10 +9,9 @@
 <body>
 
 <p>Testing SPRING</p>
-<p>FOR Cycle thymeleaf test </p>
-<div th:each="person: ${people}">
-    <a th:href="@{/test/{id}(id=${person.getId()})}" th:text="${person.getName()}"></a>
-</div>
+<p>show info for person</p>
+<p th:text = "${person.getId()}">id</p>
+<p th:text = "${person.getName()}">name</p>
 </body>
 
 </html>
