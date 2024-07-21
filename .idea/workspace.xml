@@ -10,11 +10,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="lesson 22 for cycle thymeleaf">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/show.html" afterDir="false" />
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="lesson 22 complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/FirstController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/FirstController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,7 +372,8 @@
       <workItem from="1720859033760" duration="602000" />
       <workItem from="1721038500085" duration="14000" />
       <workItem from="1721335390146" duration="1873000" />
-      <workItem from="1721375882249" duration="683000" />
+      <workItem from="1721375882249" duration="837000" />
+      <workItem from="1721379592209" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -524,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1721336667888</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="lesson 22 complete">
+      <created>1721376711520</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1721376711520</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,6 +568,7 @@
     <MESSAGE value="lesson 21" />
     <MESSAGE value="create simple calculator lesson 21 homework" />
     <MESSAGE value="lesson 22 for cycle thymeleaf" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 22 for cycle thymeleaf" />
+    <MESSAGE value="lesson 22 complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 22 complete" />
   </component>
 </project>
