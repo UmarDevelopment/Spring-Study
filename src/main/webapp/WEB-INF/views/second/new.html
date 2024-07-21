@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>My app</title>
+</head>
+
+<body>
+<p>Add new word</p>
+<form method="post" th:action="@{/second}" th:object="${word}" action="#">
+    <label for="original">Enter original: </label>
+    <input type="text" th:ufield="*{original}" id="original"/>
+    <br/>
+    <label for="translation">Enter translation: </label>
+    <input type="text" th:ufield="*{translation}" id="translation"/>
+    <br/>
+    <input type="submit" value="Add!"/>
+</form>
+</body>
+
+</html>
