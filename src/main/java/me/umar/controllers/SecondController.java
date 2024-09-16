@@ -35,7 +35,7 @@ public class SecondController {
         return "second/new";
     }
 
-    @PostMapping(produces = "application/json; charset=utf-8")
+    @PostMapping()
     public String createWord(@ModelAttribute("word") Word word){
         System.out.println("POST COMMING");
         System.out.println(word.getIntro());
