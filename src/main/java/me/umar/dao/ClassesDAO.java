@@ -22,7 +22,12 @@ public class ClassesDAO {
     }
 
     public Classe getClasse(int id){
-        return classes.get(id-1);
+        for (Classe cl: classes){
+            if (cl.getId()==id){
+                return cl;
+            }
+        }
+        return null;
     }
 
     public List<Classe> getClasses(){

@@ -10,13 +10,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="some changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/dao/ClassesDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/show.html" afterDir="false" />
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="lesson 22 again">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,22 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Desktop/Lesson23_Starter.CRUD_App3",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "a7d916346f64563273379103fb2c2f79"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/Lesson23_Starter.CRUD_App3&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a7d916346f64563273379103fb2c2f79&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clear" />
@@ -385,7 +383,8 @@
       <workItem from="1721586704805" duration="6055000" />
       <workItem from="1721632448268" duration="63000" />
       <workItem from="1721650039189" duration="1097000" />
-      <workItem from="1726486720084" duration="1788000" />
+      <workItem from="1726486720084" duration="2602000" />
+      <workItem from="1727190640357" duration="1483000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -562,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726486789112</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="lesson 22 again">
+      <created>1726488729644</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1726488729644</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +586,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create project" />
     <MESSAGE value="create first bean" />
     <MESSAGE value="lesson 5 part 1" />
     <MESSAGE value="lesson 6" />
@@ -605,6 +610,7 @@
     <MESSAGE value="edit gitignore" />
     <MESSAGE value="lesson 23" />
     <MESSAGE value="some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
+    <MESSAGE value="lesson 22 again" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 22 again" />
   </component>
 </project>
