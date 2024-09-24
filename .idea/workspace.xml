@@ -10,11 +10,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="lesson 22 again">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/new.html" afterDir="false" />
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="lesson 23">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/new.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +384,7 @@
       <workItem from="1721632448268" duration="63000" />
       <workItem from="1721650039189" duration="1097000" />
       <workItem from="1726486720084" duration="2602000" />
-      <workItem from="1727190640357" duration="1483000" />
+      <workItem from="1727190640357" duration="2039000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -568,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726488729644</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="lesson 23">
+      <created>1727192402211</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1727192402211</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,9 +615,9 @@
     <MESSAGE value="lesson 22 for cycle thymeleaf" />
     <MESSAGE value="lesson 22 complete" />
     <MESSAGE value="edit gitignore" />
-    <MESSAGE value="lesson 23" />
     <MESSAGE value="some changes" />
     <MESSAGE value="lesson 22 again" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 22 again" />
+    <MESSAGE value="lesson 23" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 23" />
   </component>
 </project>

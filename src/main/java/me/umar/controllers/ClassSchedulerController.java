@@ -37,7 +37,7 @@ public class ClassSchedulerController {
         return "classes/new";
     }
 
-    @PostMapping()
+    @PostMapping("/create")
     public String createClasse(@ModelAttribute("classe") Classe classe){
         dao.addClasse(classe);
         return "redirect:/classes";
