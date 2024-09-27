@@ -42,4 +42,17 @@ public class ClassSchedulerController {
         dao.addClasse(classe);
         return "redirect:/classes";
     }
+
+    @GetMapping("{id}/edit")
+    public String edit(Model model, @PathVariable("id") int id){
+        model.addAttribute("classe", dao.getClasse(id));
+        return "classes/edit";
+    }
+
+    @PostMapping("/{id}")
+    public String edit1(Model model, @PathVariable("id") int id){
+        Classe classe = (Classe) model.getAttribute("classe");
+        dao.addClasse(classe);
+        return "classes/index";
+    }
 }
