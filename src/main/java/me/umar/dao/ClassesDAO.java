@@ -17,6 +17,17 @@ public class ClassesDAO {
         classes.add(new Classe(4, "Biology"));
     }
 
+    public void deleteClasse(int id){
+        Classe remove = null;
+        for (Classe cl: classes){
+            if (cl.getId()==id){
+                remove = cl;
+                break;
+            }
+        }
+        classes.remove(remove);
+    }
+
     public void addClasse(Classe classe){
         classes.add(classe);
     }

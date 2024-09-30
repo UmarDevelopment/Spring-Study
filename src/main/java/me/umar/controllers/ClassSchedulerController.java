@@ -50,9 +50,9 @@ public class ClassSchedulerController {
     }
 
     @PostMapping("/{id}")
-    public String edit1(Model model, @PathVariable("id") int id){
-        Classe classe = (Classe) model.getAttribute("classe");
+    public String edit1(@ModelAttribute("classe") Classe classe, @PathVariable("id") int id){
+        dao.deleteClasse(id);
         dao.addClasse(classe);
-        return "classes/index";
+        return "redirect:/classes";
     }
 }
