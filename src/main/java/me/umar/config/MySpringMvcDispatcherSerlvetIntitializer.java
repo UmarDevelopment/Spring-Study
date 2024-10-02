@@ -1,18 +1,18 @@
 package me.umar.config;
 
-import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
-import org.springframework.web.filter.HttpPutFormContentFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import javax.servlet.Filter;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
-public class DispatcherServlet extends AbstractAnnotationConfigDispatcherServletInitializer {
+/**
+ * @author Neil Alishev
+ */
+public class MySpringMvcDispatcherSerlvetIntitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return null;
     }
 
     @Override
@@ -28,13 +28,12 @@ public class DispatcherServlet extends AbstractAnnotationConfigDispatcherServlet
     @Override
     public void onStartup(ServletContext aServletContext) throws ServletException {
         super.onStartup(aServletContext);
+        System.out.println("here we are");
         registerHiddenFieldFilter(aServletContext);
     }
 
     private void registerHiddenFieldFilter(ServletContext aContext) {
         aContext.addFilter("hiddenHttpMethodFilter",
                 new HiddenHttpMethodFilter()).addMappingForUrlPatterns(null ,true, "/*");
-        aContext.addFilter("httpPutFormContentFilter",
-                new HttpPutFormContentFilter());
     }
 }

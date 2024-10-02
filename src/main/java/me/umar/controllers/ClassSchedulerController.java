@@ -49,10 +49,16 @@ public class ClassSchedulerController {
         return "classes/edit";
     }
 
-    @PostMapping("/{id}")
+    @PatchMapping("/{id}")
     public String edit1(@ModelAttribute("classe") Classe classe, @PathVariable("id") int id){
         dao.deleteClasse(id);
         dao.addClasse(classe);
+        return "redirect:/classes";
+    }
+
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable("id") int id){
+        dao.deleteClasse(id);
         return "redirect:/classes";
     }
 }

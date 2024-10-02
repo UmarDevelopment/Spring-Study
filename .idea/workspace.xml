@@ -10,12 +10,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="start making lesson 24">
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="correct small issues in lesson 24">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/config/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/dao/ClassesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/dao/ClassesDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/Lesson23_Starter.CRUD_App3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/umari/SpringCourse/Lesson23.CRUD_App3&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -387,7 +389,10 @@
       <workItem from="1726486720084" duration="2602000" />
       <workItem from="1727190640357" duration="2703000" />
       <workItem from="1727468393048" duration="3044000" />
-      <workItem from="1727736078157" duration="1043000" />
+      <workItem from="1727736078157" duration="2648000" />
+      <workItem from="1727770508505" duration="4743000" />
+      <workItem from="1727871366408" duration="594000" />
+      <workItem from="1727902177184" duration="386000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -592,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727470741792</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="correct small issues in lesson 24">
+      <created>1727737407821</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1727737407821</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +622,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 6" />
     <MESSAGE value="lesson 7" />
     <MESSAGE value="lesson 8" />
     <MESSAGE value="lesson 9 part 1" />
@@ -635,6 +646,7 @@
     <MESSAGE value="lesson 23" />
     <MESSAGE value="change gitignore" />
     <MESSAGE value="start making lesson 24" />
-    <option name="LAST_COMMIT_MESSAGE" value="start making lesson 24" />
+    <MESSAGE value="correct small issues in lesson 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct small issues in lesson 24" />
   </component>
 </project>

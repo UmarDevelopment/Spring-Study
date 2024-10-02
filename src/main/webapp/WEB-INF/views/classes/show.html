@@ -5,11 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-<p>Some text here</p>
-<p th:text="${classe.getId()}">VALUE</p>
-<p th:text="${classe.getName()}">VALUE</p>
-<br/>
-<hr/>
-<a th:href="@{/classes/{id}/edit(id=${classe.getId()})}">UPDATE</a>
+    <p>Some text here</p>
+    <p th:text="${classe.getId()}">VALUE</p>
+    <p th:text="${classe.getName()}">VALUE</p>
+    <br/>
+    <hr/>
+    <a th:href="@{/classes/{id}/edit(id=${classe.getId()})}">UPDATE</a>
+    <br/>
+    <hr/>
+    <form th:method="DELETE" th:action="@{/classes/{id}(id=${classe.getId()})}">
+        <input type="submit" value="DELETE">
+    </form>
 </body>
 </html>
