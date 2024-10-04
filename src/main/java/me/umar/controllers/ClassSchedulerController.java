@@ -5,7 +5,10 @@ import me.umar.models.classes.Classe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("classes")
@@ -38,7 +41,10 @@ public class ClassSchedulerController {
     }
 
     @PostMapping("/create")
-    public String createClasse(@ModelAttribute("classe") Classe classe){
+    public String createClasse(@ModelAttribute("classe") @Valid Classe classe, BindingResult bindingResult){
+        if (bindingResult.hasErrors()){
+            return "classes/new";
+        }
         dao.addClasse(classe);
         return "redirect:/classes";
     }
@@ -50,7 +56,10 @@ public class ClassSchedulerController {
     }
 
     @PatchMapping("/{id}")
-    public String edit1(@ModelAttribute("classe") Classe classe, @PathVariable("id") int id){
+    public String edit1(@ModelAttribute("classe") @Valid Classe classe, BindingResult bindingResult, @PathVariable("id") int id){
+        if (bindingResult.hasErrors()){
+            return "classes/edit";
+        }
         dao.deleteClasse(id);
         dao.addClasse(classe);
         return "redirect:/classes";

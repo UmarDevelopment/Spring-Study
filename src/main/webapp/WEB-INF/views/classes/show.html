@@ -8,6 +8,8 @@
     <p>Some text here</p>
     <p th:text="${classe.getId()}">VALUE</p>
     <p th:text="${classe.getName()}">VALUE</p>
+    <p th:text="${classe.getTeacherEmail()}">VALUE</p>
+    <p th:text="${classe.getRoomNumber()}">VALUE</p>
     <br/>
     <hr/>
     <a th:href="@{/classes/{id}/edit(id=${classe.getId()})}">UPDATE</a>

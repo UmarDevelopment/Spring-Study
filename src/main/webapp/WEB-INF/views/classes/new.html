@@ -8,9 +8,19 @@
     <form th:method="POST" th:action="@{/classes/create}" th:object="${classe}">
         <label for="name">Enter name</label>
         <input type="text" th:field="*{name}" id="name">
+        <div style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">some text</div>
         <br/>
         <label for="id">Enter id</label>
         <input type="text" th:field="*{id}" id="id">
+        <div style="color:red" th:if="${#fields.hasErrors('id')}" th:errors="*{id}">some text</div>
+        <br/>
+        <label for="email">Enter email</label>
+        <input type="text" th:field="*{teacherEmail}" id="email">
+        <div style="color:red" th:if="${#fields.hasErrors('teacherEmail')}" th:errors="*{teacherEmail}">some text</div>
+        <br/>
+        <label for="room">Enter room</label>
+        <input type="text" th:field="*{roomNumber}" id="room">
+        <div style="color:red" th:if="${#fields.hasErrors('roomNumber')}" th:errors="*{roomNumber}">some text</div>
         <br/>
         <input type="submit" value="Create!">
     </form>

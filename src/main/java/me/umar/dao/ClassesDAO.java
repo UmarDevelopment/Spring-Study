@@ -11,10 +11,10 @@ public class ClassesDAO {
     List<Classe> classes = new ArrayList<>();
 
     ClassesDAO(){
-        classes.add(new Classe(1, "Math"));
-        classes.add(new Classe(2, "Geography"));
-        classes.add(new Classe(3, "Physics"));
-        classes.add(new Classe(4, "Biology"));
+        classes.add(new Classe(1, "Math", "math@yandex.ru", 15));
+        classes.add(new Classe(2, "Geography", "geo@google.com", 8));
+        classes.add(new Classe(3, "Physics", "phy@phy.hex", 52));
+        classes.add(new Classe(4, "Biology", "lolkek@lol.kek", 45));
     }
 
     public void deleteClasse(int id){

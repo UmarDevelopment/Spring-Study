@@ -6,7 +6,8 @@
 </head>
 <body>
 <div th:each="classe: ${classes}">
-    <a th:text="${classe.getName()}" th:href="@{/classes/{id}(id=${classe.getId()})}">class</a>
+    <a th:text="${classe.getName()+', '+classe.getTeacherEmail()+', '+classe.getRoomNumber()}"
+       th:href="@{/classes/{id}(id=${classe.getId()})}">class</a>
 </div>
 <br/>
 <hr/>

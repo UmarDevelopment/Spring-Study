@@ -10,13 +10,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="correct small issues in lesson 24">
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="create delete method in controller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/config/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/dao/ClassesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/dao/ClassesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -392,7 +394,8 @@
       <workItem from="1727736078157" duration="2648000" />
       <workItem from="1727770508505" duration="4743000" />
       <workItem from="1727871366408" duration="594000" />
-      <workItem from="1727902177184" duration="386000" />
+      <workItem from="1727902177184" duration="1035000" />
+      <workItem from="1728068711860" duration="1952000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -604,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1727737407821</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="create delete method in controller">
+      <created>1727902613332</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1727902613332</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +632,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 7" />
     <MESSAGE value="lesson 8" />
     <MESSAGE value="lesson 9 part 1" />
     <MESSAGE value="lesson 9 part 2" />
@@ -647,6 +656,7 @@
     <MESSAGE value="change gitignore" />
     <MESSAGE value="start making lesson 24" />
     <MESSAGE value="correct small issues in lesson 24" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct small issues in lesson 24" />
+    <MESSAGE value="create delete method in controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="create delete method in controller" />
   </component>
 </project>
