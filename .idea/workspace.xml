@@ -10,9 +10,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="start lesson 25">
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="complete lesson 25">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/classes/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/dao/ClassesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/dao/ClassesDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;a7d916346f64563273379103fb2c2f79&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RunAnythingCache">
@@ -389,7 +395,9 @@
       <workItem from="1727871366408" duration="594000" />
       <workItem from="1727902177184" duration="1035000" />
       <workItem from="1728068711860" duration="2375000" />
-      <workItem from="1728099760815" duration="366000" />
+      <workItem from="1728099760815" duration="462000" />
+      <workItem from="1728155576572" duration="1900000" />
+      <workItem from="1728157504637" duration="429000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -615,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728070808373</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="complete lesson 25">
+      <created>1728100215235</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1728100215235</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,7 +648,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 9 part 1" />
     <MESSAGE value="lesson 9 part 2" />
     <MESSAGE value="lesson 10" />
     <MESSAGE value="lesson 11" />
@@ -658,6 +672,7 @@
     <MESSAGE value="correct small issues in lesson 24" />
     <MESSAGE value="create delete method in controller" />
     <MESSAGE value="start lesson 25" />
-    <option name="LAST_COMMIT_MESSAGE" value="start lesson 25" />
+    <MESSAGE value="complete lesson 25" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete lesson 25" />
   </component>
 </project>
