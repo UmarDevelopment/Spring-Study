@@ -3,10 +3,7 @@ package me.umar.dao;
 import me.umar.models.classes.Classe;
 import org.springframework.stereotype.Component;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,24 +29,25 @@ public class ClassesDAO {
     }
 
     public void deleteClasse(int id){
-        String sql = "DELETE FROM classe WHERE id="+id;
+        String sql = "DELETE FROM classe WHERE id=?";
         try {
-            con.createStatement().executeUpdate(sql);
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, id);
+            ps.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
     public void addClasse(Classe classe){
-        String sql = "INSERT INTO classe VALUES"+
-                "("+
-                classe.getId()+", "+
-                "'"+classe.getName()+"', "+
-                "'"+classe.getTeacherEmail()+"', "+
-                classe.getRoomNumber()
-                +")";
+        String sql = "INSERT INTO classe VALUES(?, ?, ?, ?)";
         try {
-            con.createStatement().executeUpdate(sql);
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, classe.getId());
+            ps.setString(2, classe.getName());
+            ps.setString(3, classe.getTeacherEmail());
+            ps.setInt(4, classe.getRoomNumber());
+            ps.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -58,7 +56,10 @@ public class ClassesDAO {
     public Classe getClasse(int id){
         Classe resClasse = null;
         try {
-            ResultSet res = con.createStatement().executeQuery("SELECT * FROM Classe WHERE id="+id);
+            String sql = "SELECT * FROM classe WHERE id = ?";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, id);
+            ResultSet res = ps.executeQuery();
             while (res.next()){
                 Classe classe = new Classe();
                 classe.setId(res.getInt(1));
@@ -76,7 +77,9 @@ public class ClassesDAO {
     public List<Classe> getClasses(){
         List<Classe> classes = new ArrayList<>();
         try {
-            ResultSet res = con.createStatement().executeQuery("SELECT * FROM Classe");
+            String sql = "SELECT * FROM classe";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ResultSet res = ps.executeQuery();
             while (res.next()){
                 Classe classe = new Classe();
                 classe.setId(res.getInt(1));
