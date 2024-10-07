@@ -10,8 +10,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="complete lesson 26 (jdbc)">
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="complete lesson 27 (PreparedStatement)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/dao/mappers/ClasseMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/dao/ClassesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/dao/ClassesDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +27,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -397,7 +400,8 @@
       <workItem from="1728099760815" duration="462000" />
       <workItem from="1728155576572" duration="1900000" />
       <workItem from="1728157504637" duration="1254000" />
-      <workItem from="1728239320709" duration="1224000" />
+      <workItem from="1728239320709" duration="2442000" />
+      <workItem from="1728328889526" duration="1359000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -637,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728158160295</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="complete lesson 27 (PreparedStatement)">
+      <created>1728242533137</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1728242533137</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,7 +666,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 10" />
     <MESSAGE value="lesson 11" />
     <MESSAGE value="lesson 12" />
     <MESSAGE value="lesson 12 homework" />
@@ -680,6 +690,7 @@
     <MESSAGE value="start lesson 25" />
     <MESSAGE value="complete lesson 25" />
     <MESSAGE value="complete lesson 26 (jdbc)" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete lesson 26 (jdbc)" />
+    <MESSAGE value="complete lesson 27 (PreparedStatement)" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete lesson 27 (PreparedStatement)" />
   </component>
 </project>
