@@ -25,8 +25,7 @@ public class ClassesDAO {
 
     public void addClasse(Classe classe){
         jdbcTemplate.update(
-                "INSERT INTO classe VALUES (?, ?, ?, ?)",
-                classe.getId(),
+                "INSERT INTO classe (name, email, room) VALUES (?, ?, ?)",
                 classe.getName(),
                 classe.getTeacherEmail(),
                 classe.getRoomNumber()
