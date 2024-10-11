@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class ClassesDAO {
@@ -35,6 +36,11 @@ public class ClassesDAO {
     public Classe getClasse(int id){
         return jdbcTemplate.query("SELECT * FROM classe WHERE id = ?", new Object[]{id}, new ClasseMapper())
                 .stream().findAny().orElse(null);
+    }
+
+    public Optional<Classe> getClasseByEmail(String email){
+        return jdbcTemplate.query("SELECT * FROM classe WHERE email=?", new Object[]{email}, new ClasseMapper())
+                .stream().findAny();
     }
 
     public List<Classe> getClasses(){

@@ -2,6 +2,7 @@ package me.umar.controllers;
 
 import me.umar.dao.ClassesDAO;
 import me.umar.models.classes.Classe;
+import me.umar.util.ClasseValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,10 +16,12 @@ import javax.validation.Valid;
 public class ClassSchedulerController {
 
     ClassesDAO dao;
+    ClasseValidator validator;
 
     @Autowired
-    public ClassSchedulerController(ClassesDAO dao){
+    public ClassSchedulerController(ClassesDAO dao, ClasseValidator validator) {
         this.dao = dao;
+        this.validator = validator;
     }
 
     @GetMapping
@@ -42,6 +45,7 @@ public class ClassSchedulerController {
 
     @PostMapping("/create")
     public String createClasse(@ModelAttribute("classe") @Valid Classe classe, BindingResult bindingResult){
+        validator.validate(classe, bindingResult);
         if (bindingResult.hasErrors()){
             return "classes/new";
         }
@@ -57,6 +61,7 @@ public class ClassSchedulerController {
 
     @PatchMapping("/{id}")
     public String edit1(@ModelAttribute("classe") @Valid Classe classe, BindingResult bindingResult, @PathVariable("id") int id){
+        validator.validate(classe, bindingResult);
         if (bindingResult.hasErrors()){
             return "classes/edit";
         }
