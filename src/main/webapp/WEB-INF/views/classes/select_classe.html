@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Some text here</p>
+    <form th:method="PATCH" th:action="@{/classes/select}">
+        <label for="test_select">Choose Classe</label>
+        <select id="test_select" th:object="${classe}" th:field="*{id}">
+            <option th:each="classe: ${classes}" th:value="${classe.getId()}"
+                    th:text="${classe.getName()}"></option>
+        </select>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>

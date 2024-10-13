@@ -75,4 +75,16 @@ public class ClassSchedulerController {
         dao.deleteClasse(id);
         return "redirect:/classes";
     }
+
+    @GetMapping("/select")
+    public String select(Model model, @ModelAttribute("classe") Classe classe){
+        model.addAttribute("classes", dao.getClasses());
+        return "classes/select_classe";
+    }
+
+    @PatchMapping("/select")
+    public String select(@ModelAttribute("classe") Classe classe){
+        System.out.println(classe.getId());
+        return "redirect:/classes";
+    }
 }
