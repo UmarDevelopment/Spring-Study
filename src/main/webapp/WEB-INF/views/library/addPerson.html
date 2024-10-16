@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+<body>
+<p>Register new person</p>
+<FORM th:method="POST" th:action="@{/library/addPerson}" th:object="${person}">
+    <label for="fio">Enter FIO</label>
+    <input type="text" th:field="*{fio}" id="fio">
+    <br>
+    <label for="birthYear">Enter birth date</label>
+    <input type="text" th:field="*{birthYear}" id="birthYear">
+    <br>
+    <input type="submit" value="CREATE!">
+</FORM>
+</body>
+</html>

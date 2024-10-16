@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+<body>
+<p>All registered people</p>
+<div th:each="person: ${listPeople}">
+    <a th:text="${person.fio}" th:href="@{/library/personDetail/{id}(id = ${person.getId()})}"> some link</a>
+</div>
+<hr/>
+<a href="/library">Main Page</a>
+</body>
+</html>

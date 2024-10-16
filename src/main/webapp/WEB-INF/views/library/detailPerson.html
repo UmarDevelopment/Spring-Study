@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+<body>
+    <p>Detail info about person:</p>
+    <label th:text="${person.id}">id</label>
+    <br>
+    <label th:text="${person.fio}">fio</label>
+    <br>
+    <label th:text="${person.birthYear}">birthYear</label>
+
+    <hr>
+    <a th:href="@{/library/editPerson/{id}(id = ${person.id})}">Edit person</a>
+    <br>
+    <a href="/library">Main Page</a>
+</body>
+</html>
