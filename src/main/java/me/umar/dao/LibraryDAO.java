@@ -1,7 +1,9 @@
 package me.umar.dao;
 
+import me.umar.dao.mappers.BookMapper;
 import me.umar.dao.mappers.PersonMapper;
 import me.umar.models.library.Person;
+import me.umar.models.library.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
@@ -29,8 +31,56 @@ public class LibraryDAO {
         return jdbcTemplate.query("SELECT * FROM person", new PersonMapper());
     }
 
+    public List<Book> listAllBook(){
+        return jdbcTemplate.query("SELECT * FROM book", new BookMapper());
+    }
+
+
     public Optional<Person> getPersonById(int id){
         return jdbcTemplate.query("SELECT * FROM person WHERE person_id=?", new Object[]{id}, new PersonMapper())
                 .stream().findAny();
+    }
+
+    public Optional<Book> getBookById(int id){
+        return jdbcTemplate.query("SELECT * FROM book WHERE book_id=?", new Object[]{id}, new BookMapper())
+                .stream().findAny();
+    }
+
+    public void updatePerson(Person person){
+        jdbcTemplate.update("UPDATE spring.person SET fio = ?, birth_year = ? WHERE person_id = ?",
+                person.getFio(),
+                person.getBirthYear(),
+                person.getId()
+        );
+    }
+
+    public void updateBook(Book book){
+        jdbcTemplate.update("UPDATE spring.book SET name = ?, author = ?, year = ? WHERE book_id = ?",
+                book.getName(),
+                book.getAuthor(),
+                book.getYear(),
+                book.getId()
+        );
+    }
+
+    public void deleteBook(Book book){
+        jdbcTemplate.update("DELETE FROM spring.book WHERE book_id = ?",
+                book.getId()
+        );
+    }
+
+    public void deletePerson(Person person){
+        jdbcTemplate.update("DELETE FROM spring.person WHERE person_id = ?",
+                person.getId()
+        );
+    }
+
+    public void addBook(Book book){
+        jdbcTemplate.update(
+                "INSERT INTO spring.book (name, author, year) VALUES (?, ?, ?)",
+                book.getName(),
+                book.getAuthor(),
+                book.getYear()
+        );
     }
 }

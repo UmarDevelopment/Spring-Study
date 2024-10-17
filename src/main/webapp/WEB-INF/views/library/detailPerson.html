@@ -13,6 +13,12 @@
     <label th:text="${person.birthYear}">birthYear</label>
 
     <hr>
+    <FORM th:method="DELETE" th:object="${person}" th:action="@{/library/deletePerson}">
+        <input type="hidden" th:field="*{id}">
+        <input type="submit" value="DELETE">
+    </FORM>
+    <br>
+    <br>
     <a th:href="@{/library/editPerson/{id}(id = ${person.id})}">Edit person</a>
     <br>
     <a href="/library">Main Page</a>
