@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,6 +26,16 @@ public class LibraryDAO {
                 person.getFio(),
                 person.getBirthYear()
         );
+    }
+
+    public List<Book> getPersonsBook(int person_id){
+        List<Book> list;
+        list = jdbcTemplate.query(
+                "select book.* from book join person p on book.person_id = p.person_id where p.person_id = ?",
+                new Object[]{person_id},
+                new BookMapper()
+        );
+        return list;
     }
 
     public List<Person> listAllPeople(){

@@ -10,15 +10,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="add Books pages with methods lesson 44">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="add book reserve and release functional">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/LibraryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/dao/LibraryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/dao/LibraryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/dao/mappers/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/dao/mappers/BookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/models/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/library/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/models/library/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/library/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/library/detailBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/library/detailBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/library/detailPerson.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/library/detailPerson.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -410,7 +406,7 @@
       <workItem from="1728847615155" duration="1678000" />
       <workItem from="1729079485041" duration="6642000" />
       <workItem from="1729166147269" duration="13179000" />
-      <workItem from="1729261196725" duration="5132000" />
+      <workItem from="1729261196725" duration="6624000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -699,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729183687602</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add book reserve and release functional">
+      <created>1729286060753</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1729286060753</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -717,7 +720,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create SPRING_MVC branch" />
     <MESSAGE value="change XML config to java code config" />
     <MESSAGE value="lesson 20" />
     <MESSAGE value="lesson 21" />
@@ -742,6 +744,7 @@
     <MESSAGE value="complete lesson 43" />
     <MESSAGE value="start lesson 44" />
     <MESSAGE value="add Books pages with methods lesson 44" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Books pages with methods lesson 44" />
+    <MESSAGE value="add book reserve and release functional" />
+    <option name="LAST_COMMIT_MESSAGE" value="add book reserve and release functional" />
   </component>
 </project>

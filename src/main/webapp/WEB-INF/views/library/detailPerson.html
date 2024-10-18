@@ -22,5 +22,14 @@
     <a th:href="@{/library/editPerson/{id}(id = ${person.id})}">Edit person</a>
     <br>
     <a href="/library">Main Page</a>
+
+    <hr>
+    <div th:if="${listBooks.isEmpty()}">
+        <p>This user have no reserved books!</p>
+    </div>
+    <div th:unless="${listBooks.isEmpty()}">
+        <p>Reserved book:</p>
+        <p th:each="book: ${listBooks}" th:text="${book.name}">This user have no reserved books!</p>
+    </div>
 </body>
 </html>

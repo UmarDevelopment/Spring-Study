@@ -8,6 +8,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
 @RequestMapping("library")
 public class LibraryController {
@@ -64,6 +67,10 @@ public class LibraryController {
     @GetMapping("personDetail/{id}")
     public String personDetail(@PathVariable("id") int id, Model model){
         Person person = dao.getPersonById(id).get();
+        List<Book> list = dao.getPersonsBook(id);
+        System.out.println(id);
+        System.out.println(list);
+        model.addAttribute("listBooks", list);
         model.addAttribute("person", person);
         return "library/detailPerson";
     }
