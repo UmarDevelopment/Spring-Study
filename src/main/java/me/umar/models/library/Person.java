@@ -1,8 +1,18 @@
 package me.umar.models.library;
 
 public class Person {
+    private boolean isExists = true;
     private int id;
     private String fio;
+
+    public boolean isExists() {
+        return isExists;
+    }
+
+    public void setExists(boolean exists) {
+        isExists = exists;
+    }
+
     private int birthYear;
 
     public Person(int id, String fio, int birthYear) {

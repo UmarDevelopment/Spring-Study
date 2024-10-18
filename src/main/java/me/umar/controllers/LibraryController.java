@@ -72,6 +72,14 @@ public class LibraryController {
     public String bookDetail(@PathVariable("id") int id, Model model){
         Book book = dao.getBookById(id).get();
         model.addAttribute("book", book);
+        model.addAttribute("people", dao.listAllPeople());
+        Person person = new Person();
+        if (dao.getPersonById(book.getPerson_id()).isPresent()){
+            person = dao.getPersonById(book.getPerson_id()).get();
+        }else{
+            person.setExists(false);
+        }
+        model.addAttribute("person", person);
         return "library/detailBook";
     }
 
@@ -100,6 +108,19 @@ public class LibraryController {
         dao.updateBook(book);
         int id = book.getId();
         return String.format("redirect:/library/bookDetail/%s", id);
+    }
+
+    @PatchMapping("releaseBook")
+    public String releaseBook(@ModelAttribute("book") Book book){
+        dao.releaseBook(book);
+        int id = book.getId();
+        return String.format("redirect:/library/bookDetail/%s", id);
+    }
+
+    @PatchMapping("{book_id}/reserveBook")
+    public String reserveBook(@ModelAttribute("person") Person person, @PathVariable("book_id") int book_id){
+        dao.reserveBook(person, book_id);
+        return String.format("redirect:/library/bookDetail/%s", book_id);
     }
 
     @DeleteMapping("deleteBook")

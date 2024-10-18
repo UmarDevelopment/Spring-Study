@@ -5,6 +5,15 @@ public class Book {
     String name;
     String author;
     int year;
+    int person_id;
+
+    public int getPerson_id() {
+        return person_id;
+    }
+
+    public void setPerson_id(int person_id) {
+        this.person_id = person_id;
+    }
 
     @Override
     public String toString() {
@@ -19,11 +28,12 @@ public class Book {
     public Book() {
     }
 
-    public Book(int id, String name, String author, int year) {
+    public Book(int id, String name, String author, int year, int person_id) {
         this.id = id;
         this.name = name;
         this.author = author;
         this.year = year;
+        this.person_id = person_id;
     }
 
     public int getId() {

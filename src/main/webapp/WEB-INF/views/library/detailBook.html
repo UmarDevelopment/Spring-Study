@@ -6,14 +6,13 @@
 </head>
 <body>
 <p>Detail info about book:</p>
-<label th:text="${book.id}">id</label>
+<label th:text="'id: '+${book.id}">id</label>
 <br>
-<label th:text="${book.name}">name</label>
+<label th:text="'name: '+${book.name}">name</label>
 <br>
-<label th:text="${book.author}">author</label>
+<label th:text="'author: '+${book.author}">author</label>
 <br>
-<year th:text="${book.year}">author</year>
-
+<year th:text="'year: '+${book.year}">author</year>
 <hr>
 <a th:href="@{/library/editBook/{id}(id = ${book.id})}">Edit book</a>
 <br>
@@ -24,5 +23,27 @@
 </FORM>
 <br>
 <a href="/library">Main Page</a>
+
+<hr>
+<p>Reserve book</p>
+<div th:if="${person.isExists()}">
+    <p th:text="'This book reserved by '+${person.getFio()}">text</p>
+</div>
+<div th:unless="${person.isExists()}">
+    <p>This book is available</p>
+</div>
+<FORM th:method="PATCH" th:action="@{/library/{id}/reserveBook(id = ${book.id})}" th:object="${person}">
+    <select th:field="*{id}">
+        <option th:each="pers: ${people}" th:value="${pers.getId()}" th:text="${pers.getFio()}"></option>
+    </select>
+    <input type="submit" value="RESERVE">
+</FORM>
+<br>
+<div th:if="${person.isExists()}">
+    <FORM th:method="PATCH" th:action="@{/library/releaseBook}" th:object="${book}">
+        <input type="hidden" th:field="*{id}">
+        <input type="submit" value="RELEASE">
+    </FORM>
+</div>
 </body>
 </html>

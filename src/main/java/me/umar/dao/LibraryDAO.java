@@ -63,6 +63,19 @@ public class LibraryDAO {
         );
     }
 
+    public void releaseBook(Book book){
+        jdbcTemplate.update("UPDATE spring.book SET person_id = null WHERE book_id = ?",
+            book.getId()
+        );
+    }
+
+    public void reserveBook(Person person, int book_id){
+        jdbcTemplate.update("UPDATE spring.book SET person_id = ? WHERE book_id = ?",
+                person.getId(),
+                book_id
+        );
+    }
+
     public void deleteBook(Book book){
         jdbcTemplate.update("DELETE FROM spring.book WHERE book_id = ?",
                 book.getId()
