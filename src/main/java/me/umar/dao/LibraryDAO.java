@@ -4,21 +4,24 @@ import me.umar.dao.mappers.BookMapper;
 import me.umar.dao.mappers.PersonMapper;
 import me.umar.models.library.Person;
 import me.umar.models.library.*;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 @Component
 public class LibraryDAO {
     JdbcTemplate jdbcTemplate;
+    private final SessionFactory sessionFactory;
 
     @Autowired
-    public LibraryDAO(JdbcTemplate jdbcTemplate) {
+    public LibraryDAO(JdbcTemplate jdbcTemplate, SessionFactory sessionFactory) {
         this.jdbcTemplate = jdbcTemplate;
+        this.sessionFactory = sessionFactory;
     }
 
     public void addPerson(Person person) {
@@ -50,6 +53,12 @@ public class LibraryDAO {
     public Optional<Person> getPersonById(int id){
         return jdbcTemplate.query("SELECT * FROM person WHERE person_id=?", new Object[]{id}, new PersonMapper())
                 .stream().findAny();
+    }
+
+    @Transactional
+    public void getPersonByIdHib(int id){
+        Person person = sessionFactory.getCurrentSession().get(Person.class, id);
+        System.out.println(person);
     }
 
     public Optional<Book> getBookById(int id){

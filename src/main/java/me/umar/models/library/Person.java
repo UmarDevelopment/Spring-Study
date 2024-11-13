@@ -1,8 +1,18 @@
 package me.umar.models.library;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "person")
 public class Person {
+    @Transient
     private boolean isExists = true;
+    @Id
+    @Column(name = "person_id")
     private int id;
+    @Column(name = "birth_year")
+    private int birthYear;
+    @Column(name = "fio")
     private String fio;
 
     public boolean isExists() {
@@ -12,8 +22,6 @@ public class Person {
     public void setExists(boolean exists) {
         isExists = exists;
     }
-
-    private int birthYear;
 
     public Person(int id, String fio, int birthYear) {
         this.id = id;

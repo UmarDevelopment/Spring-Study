@@ -10,11 +10,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="add book reserve and release functional">
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="complete lesson44">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/LibraryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/dao/LibraryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/dao/LibraryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/library/detailPerson.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/library/detailPerson.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/models/library/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/library/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -406,7 +409,10 @@
       <workItem from="1728847615155" duration="1678000" />
       <workItem from="1729079485041" duration="6642000" />
       <workItem from="1729166147269" duration="13179000" />
-      <workItem from="1729261196725" duration="6624000" />
+      <workItem from="1729261196725" duration="7396000" />
+      <workItem from="1730062546009" duration="783000" />
+      <workItem from="1730205257800" duration="43000" />
+      <workItem from="1731505016989" duration="2792000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -702,7 +708,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729286060753</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="complete lesson44">
+      <created>1729287675207</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1729287675207</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -720,7 +733,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change XML config to java code config" />
     <MESSAGE value="lesson 20" />
     <MESSAGE value="lesson 21" />
     <MESSAGE value="create simple calculator lesson 21 homework" />
@@ -745,6 +757,7 @@
     <MESSAGE value="start lesson 44" />
     <MESSAGE value="add Books pages with methods lesson 44" />
     <MESSAGE value="add book reserve and release functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="add book reserve and release functional" />
+    <MESSAGE value="complete lesson44" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete lesson44" />
   </component>
 </project>

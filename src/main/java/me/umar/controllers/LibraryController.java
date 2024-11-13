@@ -67,6 +67,7 @@ public class LibraryController {
     @GetMapping("personDetail/{id}")
     public String personDetail(@PathVariable("id") int id, Model model){
         Person person = dao.getPersonById(id).get();
+        dao.getPersonByIdHib(id);
         List<Book> list = dao.getPersonsBook(id);
         System.out.println(id);
         System.out.println(list);
