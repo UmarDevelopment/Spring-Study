@@ -1,6 +1,8 @@
 package me.umar.models.library;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "person")
@@ -8,12 +10,26 @@ public class Person {
     @Transient
     private boolean isExists = true;
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "person_id")
     private int id;
     @Column(name = "birth_year")
     private int birthYear;
     @Column(name = "fio")
     private String fio;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "book_id")
+    List<Book> books;
+
+    public void addBook(Book book){
+        if (books==null){books = new ArrayList<>();}
+        books.add(book);
+    }
+
+    public List<Book> getBooks(){
+        return this.books;
+    }
 
     public boolean isExists() {
         return isExists;
