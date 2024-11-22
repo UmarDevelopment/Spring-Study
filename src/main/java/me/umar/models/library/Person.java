@@ -18,13 +18,17 @@ public class Person {
     @Column(name = "fio")
     private String fio;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "book_id")
     List<Book> books;
 
     public void addBook(Book book){
         if (books==null){books = new ArrayList<>();}
         books.add(book);
+    }
+
+    public void setBooks(List<Book> books){
+        this.books = new ArrayList<>(books);
     }
 
     public List<Book> getBooks(){
@@ -79,5 +83,11 @@ public class Person {
 
     public void setBirthYear(int birthYear) {
         this.birthYear = birthYear;
+    }
+
+    public void duplicateAll(Person target){
+        this.fio = target.fio;
+        this.books = new ArrayList<>(target.books);
+        this.birthYear = target.birthYear;
     }
 }

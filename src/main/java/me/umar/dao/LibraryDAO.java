@@ -5,6 +5,7 @@ import me.umar.dao.mappers.PersonMapper;
 import me.umar.models.library.Person;
 import me.umar.models.library.*;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
@@ -15,12 +16,10 @@ import java.util.Optional;
 
 @Component
 public class LibraryDAO {
-    //JdbcTemplate jdbcTemplate;
     private final SessionFactory sessionFactory;
 
     @Autowired
-    public LibraryDAO(/*JdbcTemplate jdbcTemplate, */SessionFactory sessionFactory) {
-        //this.jdbcTemplate = jdbcTemplate;
+    public LibraryDAO(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
@@ -33,13 +32,6 @@ public class LibraryDAO {
     public List<Book> getPersonsBook(int person_id){
         Person person = getPersonById(person_id).get();
         return person.getBooks();
-//        List<Book> list;
-//        list = jdbcTemplate.query(
-//                "select book.* from book join person p on book.person_id = p.person_id where p.person_id = ?",
-//                new Object[]{person_id},
-//                new BookMapper()
-//        );
-//        return list;
     }
 
     @Transactional
@@ -50,7 +42,6 @@ public class LibraryDAO {
     @Transactional
     public List<Book> listAllBook(){
         return sessionFactory.getCurrentSession().createNativeQuery("SELECT * FROM book", Book.class).list();
-        //return jdbcTemplate.query("SELECT * FROM book", new BookMapper());
     }
 
 
@@ -73,38 +64,30 @@ public class LibraryDAO {
         }else{
             return Optional.of(book);
         }
-//        return jdbcTemplate.query("SELECT * FROM book WHERE book_id=?", new Object[]{id}, new BookMapper())
-//                .stream().findAny();
     }
 
     @Transactional
     public void updatePerson(Person person){
-        sessionFactory.getCurrentSession().persist(person);
-//        jdbcTemplate.update("UPDATE spring.person SET fio = ?, birth_year = ? WHERE person_id = ?",
-//                person.getFio(),
-//                person.getBirthYear(),
-//                person.getId()
-//        );
+        Person personH = sessionFactory.getCurrentSession().get(Person.class, person.getId());
+        personH.setFio(person.getFio());
+        personH.setBirthYear(person.getBirthYear());
+        personH.setBooks(person.getBooks());
     }
 
     @Transactional
     public void updateBook(Book book){
-        sessionFactory.getCurrentSession().persist(book);
-//        jdbcTemplate.update("UPDATE spring.book SET name = ?, author = ?, year = ? WHERE book_id = ?",
-//                book.getName(),
-//                book.getAuthor(),
-//                book.getYear(),
-//                book.getId()
-//        );
+        Book bookH = sessionFactory.getCurrentSession().get(Book.class, book.getId());
+        bookH.setYear(book.getYear());
+        bookH.setName(book.getName());
+        bookH.setAuthor(book.getAuthor());
+        bookH.setYear(book.getYear());
+        bookH.setPerson(book.getPerson());
     }
 
     @Transactional
     public void releaseBook(Book book){
-        book.setPerson(null);
-        sessionFactory.getCurrentSession().persist(book);
-//        jdbcTemplate.update("UPDATE spring.book SET person_id = null WHERE book_id = ?",
-//            book.getId()
-//        );
+        Book bookH = sessionFactory.getCurrentSession().get(Book.class, book.getId());
+        bookH.setPerson(null);
     }
 
     @Transactional
@@ -112,38 +95,22 @@ public class LibraryDAO {
         Book book = getBookById(book_id).get();
         Person person = getPersonById(person_id).get();
         book.setPerson(person);
-        person.addBook(book);
-        //sessionFactory.getCurrentSession().persist(person);
-        sessionFactory.getCurrentSession().persist(book);
-//        jdbcTemplate.update("UPDATE spring.book SET person_id = ? WHERE book_id = ?",
-//                person.getId(),
-//                book_id
-//        );
     }
     @Transactional
     public void deleteBook(Book book){
         sessionFactory.getCurrentSession().delete(book);
-        /*jdbcTemplate.update("DELETE FROM spring.book WHERE book_id = ?",
-                book.getId()
-        );*/
     }
 
     @Transactional
     public void deletePerson(Person person){
-        sessionFactory.getCurrentSession().delete(person);
-//        jdbcTemplate.update("DELETE FROM spring.person WHERE person_id = ?",
-//                person.getId()
-//        );
+        System.out.println("HERE WE START");
+        Query query = sessionFactory.getCurrentSession().createNativeQuery("DELETE FROM person where person_id = "+person.getId());
+        query.executeUpdate();
+        System.out.println("HERE WE FINISH");
     }
 
     @Transactional
     public void addBook(Book book){
         sessionFactory.getCurrentSession().persist(book);
-//        jdbcTemplate.update(
-//                "INSERT INTO spring.book (name, author, year) VALUES (?, ?, ?)",
-//                book.getName(),
-//                book.getAuthor(),
-//                book.getYear()
-//        );
     }
 }
