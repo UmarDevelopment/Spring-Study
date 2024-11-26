@@ -2,6 +2,7 @@ package me.umar.controllers;
 
 import me.umar.dao.ClassesDAO;
 import me.umar.models.classes.Classe;
+import me.umar.services.ClasseService;
 import me.umar.util.ClasseValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,24 +16,28 @@ import javax.validation.Valid;
 @RequestMapping("classes")
 public class ClassSchedulerController {
 
-    ClassesDAO dao;
+    //ClassesDAO dao;
     ClasseValidator validator;
+    ClasseService classeService;
 
     @Autowired
-    public ClassSchedulerController(ClassesDAO dao, ClasseValidator validator) {
-        this.dao = dao;
+    public ClassSchedulerController(ClasseService classeService /*ClassesDAO dao*/, ClasseValidator validator) {
+        //this.dao = dao;
+        this.classeService = classeService;
         this.validator = validator;
     }
 
     @GetMapping
     public String index(Model model){
-        model.addAttribute("classes", dao.getClasses());
+        model.addAttribute("classes", classeService.findAll());
+        //model.addAttribute("classes", dao.getClasses());
         return "classes/index";
     }
 
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model){
-        model.addAttribute("classe", dao.getClasse(id));
+        model.addAttribute("classe", classeService.findOne(id));
+        //model.addAttribute("classe", dao.getClasse(id));
         return "classes/show";
     }
 
@@ -49,13 +54,15 @@ public class ClassSchedulerController {
         if (bindingResult.hasErrors()){
             return "classes/new";
         }
-        dao.addClasse(classe);
+        classeService.save(classe);
+        //dao.addClasse(classe);
         return "redirect:/classes";
     }
 
     @GetMapping("{id}/edit")
     public String edit(Model model, @PathVariable("id") int id){
-        model.addAttribute("classe", dao.getClasse(id));
+        model.addAttribute("classe", classeService.findOne(id));
+        //model.addAttribute("classe", dao.getClasse(id));
         return "classes/edit";
     }
 
@@ -65,20 +72,23 @@ public class ClassSchedulerController {
         if (bindingResult.hasErrors()){
             return "classes/edit";
         }
-        dao.deleteClasse(id);
-        dao.addClasse(classe);
+        classeService.save(classe);
+        //dao.deleteClasse(id);
+        //dao.addClasse(classe);
         return "redirect:/classes";
     }
 
     @DeleteMapping("/{id}")
     public String delete(@PathVariable("id") int id){
-        dao.deleteClasse(id);
+        classeService.delete(id);
+        //dao.deleteClasse(id);
         return "redirect:/classes";
     }
 
     @GetMapping("/select")
     public String select(Model model, @ModelAttribute("classe") Classe classe){
-        model.addAttribute("classes", dao.getClasses());
+        model.addAttribute("classes", classeService.findAll());
+        //model.addAttribute("classes", dao.getClasses());
         return "classes/select_classe";
     }
 

@@ -10,10 +10,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="start lesson59">
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="modify lesson59">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/repositories/ClasseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/services/ClasseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/dao/LibraryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/dao/LibraryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/models/library/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/library/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -81,6 +85,7 @@
     <option name="myCommands">
       <command value="mvn clear" />
       <command value="mvn clean" />
+      <command value="mvn compile" />
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.891">
@@ -105,7 +110,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.891" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.891" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/library" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/classes" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="testspring:war exploded">
@@ -411,7 +416,8 @@
       <workItem from="1731505016989" duration="3499000" />
       <workItem from="1731603970567" duration="5000" />
       <workItem from="1732014815727" duration="7015000" />
-      <workItem from="1732293482936" duration="3080000" />
+      <workItem from="1732293482936" duration="3103000" />
+      <workItem from="1732658192885" duration="2583000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -728,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732054987661</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="modify lesson59">
+      <created>1732313853073</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1732313853073</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -746,7 +759,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create simple calculator lesson 21 homework" />
     <MESSAGE value="lesson 22 for cycle thymeleaf" />
     <MESSAGE value="lesson 22 complete" />
     <MESSAGE value="edit gitignore" />
@@ -771,6 +783,7 @@
     <MESSAGE value="complete lesson44" />
     <MESSAGE value="complete lesson58" />
     <MESSAGE value="start lesson59" />
-    <option name="LAST_COMMIT_MESSAGE" value="start lesson59" />
+    <MESSAGE value="modify lesson59" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify lesson59" />
   </component>
 </project>

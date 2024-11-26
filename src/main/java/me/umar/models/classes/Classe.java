@@ -1,20 +1,27 @@
 package me.umar.models.classes;
 
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
+@Entity
 public class Classe {
+    @Id
     int id;
     @NotEmpty(message = "EMPTY")
     @Size(min = 2, max = 20, message = "size error")
     String name;
     @NotEmpty(message = "EMPTY")
     @Email(message = "not valid email")
+    @Column(name = "email")
     String teacherEmail;
     @Min(value = 1, message = "min value should be 1")
+    @Column(name = "room")
     int roomNumber;
 
     public Classe(int id, String name, String teacherEmail, int roomNumber) {
@@ -24,7 +31,8 @@ public class Classe {
         this.roomNumber = roomNumber;
     }
 
-    public Classe() {}
+    public Classe() {
+    }
 
     public int getId() {
         return id;
