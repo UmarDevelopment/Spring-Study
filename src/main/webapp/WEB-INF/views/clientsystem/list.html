@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+<body>
+<p>All registered people</p>
+<div th:each="client: ${listClients}">
+    <p th:text="${client.name+' '+client.surname+', '+client.age+' years, '+client.rank}"> text </p>
+</div>
+</body>
+</html>

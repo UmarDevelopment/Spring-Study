@@ -10,14 +10,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="modify lesson59">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/repositories/ClasseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/services/ClasseService.java" afterDir="false" />
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="complete lesson61 SpringDataJPA">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/cleintsystem/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/repositories/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/services/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/clientsystem/createclient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/clientsystem/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/clientsystem/welcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClassSchedulerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/classes/Classe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +29,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -110,7 +111,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.891" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.891" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/classes" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/clients" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="testspring:war exploded">
@@ -417,7 +418,8 @@
       <workItem from="1731603970567" duration="5000" />
       <workItem from="1732014815727" duration="7015000" />
       <workItem from="1732293482936" duration="3103000" />
-      <workItem from="1732658192885" duration="2583000" />
+      <workItem from="1732658192885" duration="3343000" />
+      <workItem from="1732728207741" duration="3655000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -741,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732313853073</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="complete lesson61 SpringDataJPA">
+      <created>1732663723831</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1732663723831</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -759,7 +768,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 22 for cycle thymeleaf" />
     <MESSAGE value="lesson 22 complete" />
     <MESSAGE value="edit gitignore" />
     <MESSAGE value="some changes" />
@@ -784,6 +792,7 @@
     <MESSAGE value="complete lesson58" />
     <MESSAGE value="start lesson59" />
     <MESSAGE value="modify lesson59" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify lesson59" />
+    <MESSAGE value="complete lesson61 SpringDataJPA" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete lesson61 SpringDataJPA" />
   </component>
 </project>
