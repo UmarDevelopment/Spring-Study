@@ -10,15 +10,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="complete lesson61 SpringDataJPA">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/cleintsystem/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/repositories/ClientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/services/ClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/clientsystem/createclient.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/clientsystem/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/clientsystem/welcome.html" afterDir="false" />
+    <list default="true" id="12e719db-5d71-445b-8e5d-eccb04df8352" name="Changes" comment="start lesson62 SpringDataJPA complex">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/umar/models/cleintsystem/ClientForSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/clientsystem/searchclient.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/repositories/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/repositories/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/umar/services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/umar/services/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/clientsystem/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/clientsystem/welcome.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +29,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -419,7 +418,7 @@
       <workItem from="1732014815727" duration="7015000" />
       <workItem from="1732293482936" duration="3103000" />
       <workItem from="1732658192885" duration="3343000" />
-      <workItem from="1732728207741" duration="3655000" />
+      <workItem from="1732728207741" duration="6928000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1716907789289</created>
@@ -750,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732663723831</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="start lesson62 SpringDataJPA complex">
+      <created>1732739848427</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1732739848427</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -768,7 +774,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 22 complete" />
     <MESSAGE value="edit gitignore" />
     <MESSAGE value="some changes" />
     <MESSAGE value="lesson 22 again" />
@@ -793,6 +798,7 @@
     <MESSAGE value="start lesson59" />
     <MESSAGE value="modify lesson59" />
     <MESSAGE value="complete lesson61 SpringDataJPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete lesson61 SpringDataJPA" />
+    <MESSAGE value="start lesson62 SpringDataJPA complex" />
+    <option name="LAST_COMMIT_MESSAGE" value="start lesson62 SpringDataJPA complex" />
   </component>
 </project>

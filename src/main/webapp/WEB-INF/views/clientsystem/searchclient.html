@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Search clients</title>
+</head>
+<body>
+<p>Create new client</p>
+<FORM th:method="GET" th:action="@{/clients/searchClientResult}" th:object="${clientForSearch}">
+    <label for="id">Enter id</label>
+    <input type="text" th:field="*{id}" id="id">
+    <br>
+    <label for="name">Enter name</label>
+    <input type="text" th:field="*{name}" id="name">
+    <br>
+    <label for="surname">Enter surname</label>
+    <input type="text" th:field="*{surname}" id="surname">
+    <br>
+    <label for="minage">Enter min age</label>
+    <input type="text" th:field="*{minAge}" id="minage">
+    <br>
+    <label for="maxage">Enter max age</label>
+    <input type="text" th:field="*{maxAge}" id="maxage">
+    <br>
+    <label for="minrank">Enter min rank</label>
+    <input type="text" th:field="*{minRank}" id="minrank">
+    <br>
+    <label for="maxrank">Enter max rank</label>
+    <input type="text" th:field="*{maxRank}" id="maxrank">
+    <br>
+    <input type="submit" value="SEARCH!">
+</FORM>
+<div th:unless="${resultSearch.isEmpty()}">
+    <p>List of results</p>
+    <div th:each="client: ${resultSearch}">
+        <p th:text="${client.name+' '+client.surname+', '+client.age+' years, '+client.rank}"> text </p>
+    </div>
+</div>
+</body>
+</html>

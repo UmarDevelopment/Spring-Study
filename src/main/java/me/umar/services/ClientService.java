@@ -1,6 +1,7 @@
 package me.umar.services;
 
 import me.umar.models.cleintsystem.Client;
+import me.umar.models.cleintsystem.ClientForSearch;
 import me.umar.repositories.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,19 @@ public class ClientService {
 
     public List<Client> findAll(){
         return clientRepository.findAll();
+    }
+
+    public List<Client> findByName(String name){
+        return clientRepository.findByNameLike(name);
+    }
+
+    public List<Client> findByAny(ClientForSearch client){
+        return clientRepository.findByNameLikeAndSurnameLikeAndAgeBetween(
+                "%"+client.getName()+"%",
+                "%"+client.getSurname()+"%",
+                client.getMinAge(),
+                client.getMaxAge()
+        );
     }
 
     public void save(Client client){
